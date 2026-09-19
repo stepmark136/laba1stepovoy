@@ -64,66 +64,65 @@
 // Console.WriteLine($"25 / 4 как double: {studentsGroupCorrect}");
 
 // Объединяем строки разными способами
-Console.WriteLine();
-Console.WriteLine("Способы собрать строку");
-
-// Переменные для имени и фамилии
-string firstName = "Анна";
-string lastName = "Смирнова";
-
-// Способ 1: склеиваем через плюс
-string fullNameConcat = firstName + " " + lastName;
-
-// Способ 2: используем интерполяцию через $
-string fullNameInterp = $"{firstName} {lastName}";
-
-// Способ 3: используем готовый метод string.Concat
-string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
-
-// Выводим все варианты на экран
-Console.WriteLine(fullNameConcat);
-Console.WriteLine(fullNameInterp);
-Console.WriteLine(fullNameConcatMethod);
-
-// Проверяем, совпадает ли результат всех трех способов
-Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
-
-
-// Работаем с фиксированными значениями (константами)
-Console.WriteLine();
-Console.WriteLine("Константы");
-
-// Константы — эти значения нельзя случайно изменить дальше в коде
-const double VatRate = 0.20;
-const string CollegeName = "ВФ ВолГУ";
-
-// Считаем итоговую цену вместе с НДС
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
-
-// Выводим название заведения и итоговую цену
-Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
-
-
-
-// // Задание 1. Финансовый мини-расчёт
-// Console.WriteLine("Финансовый расчёт");
-
-// int scholarship = 5000;
-// int monthlyExpen = 3500;
-
-// int monthlyBal = scholarship - monthlyExpen;
-
-// const int MonthsSemester = 4;
-
-// int semesterBalance = monthlyBal * MonthsSemester;
-
-// Console.WriteLine($"Стипендия: {scholarship} руб.");
-// Console.WriteLine($"Расходы: {monthlyExpen} руб.");
-// Console.WriteLine($"Остаток за месяц: {monthlyBal} руб.");
-// Console.WriteLine($"Остаток за семестр: {semesterBalance} руб.");
-
 // Console.WriteLine();
+// Console.WriteLine("Способы собрать строку");
 
+// // Переменные для имени и фамилии
+// string firstName = "Анна";
+// string lastName = "Смирнова";
+
+// // Способ 1: склеиваем через плюс
+// string fullNameConcat = firstName + " " + lastName;
+
+// // Способ 2: используем интерполяцию через $
+// string fullNameInterp = $"{firstName} {lastName}";
+
+// // Способ 3: используем готовый метод string.Concat
+// string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+
+// // Выводим все варианты на экран
+// Console.WriteLine(fullNameConcat);
+// Console.WriteLine(fullNameInterp);
+// Console.WriteLine(fullNameConcatMethod);
+
+// // Проверяем, совпадает ли результат всех трех способов
+// Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+
+
+// // Работаем с фиксированными значениями (константами)
+// Console.WriteLine();
+// Console.WriteLine("Константы");
+
+// // Константы — эти значения нельзя случайно изменить дальше в коде
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ ВолГУ";
+
+// // Считаем итоговую цену вместе с НДС
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
+
+// // Выводим название заведения и итоговую цену
+// Console.WriteLine($"Учебное заведение: {CollegeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+
+
+
+// Задание 1. Финансовый мини-расчёт
+Console.WriteLine("Финансовый расчёт");
+
+int scholarship = 5000;
+int monthlyExpen = 3500;
+
+int monthlyBal = scholarship - monthlyExpen;
+
+const int MonthsSemester = 4;
+
+int semesterBalance = monthlyBal * MonthsSemester;
+
+Console.WriteLine($"Стипендия: {scholarship} руб.");
+Console.WriteLine($"Расходы: {monthlyExpen} руб.");
+Console.WriteLine($"Остаток за месяц: {monthlyBal} руб.");
+Console.WriteLine($"Остаток за семестр: {semesterBalance} руб.");
+
+Console.WriteLine();
 
