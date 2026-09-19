@@ -107,22 +107,33 @@
 
 
 
-// Задание 1. Финансовый мини-расчёт
-Console.WriteLine("Финансовый расчёт");
+// // Задание 1. Финансовый мини-расчёт
+// Console.WriteLine("Финансовый расчёт");
 
-int scholarship = 5000;
-int monthlyExpen = 3500;
+// int scholarship = 5000;
+// int monthlyExpen = 3500;
 
-int monthlyBal = scholarship - monthlyExpen;
+// int monthlyBal = scholarship - monthlyExpen;
 
-const int MonthsSemester = 4;
+// const int MonthsSemester = 4;
 
-int semesterBalance = monthlyBal * MonthsSemester;
+// int semesterBalance = monthlyBal * MonthsSemester;
 
-Console.WriteLine($"Стипендия: {scholarship} руб.");
-Console.WriteLine($"Расходы: {monthlyExpen} руб.");
-Console.WriteLine($"Остаток за месяц: {monthlyBal} руб.");
-Console.WriteLine($"Остаток за семестр: {semesterBalance} руб.");
+// Console.WriteLine($"Стипендия: {scholarship} руб.");
+// Console.WriteLine($"Расходы: {monthlyExpen} руб.");
+// Console.WriteLine($"Остаток за месяц: {monthlyBal} руб.");
+// Console.WriteLine($"Остаток за семестр: {semesterBalance} руб.");
 
-Console.WriteLine();
+// Console.WriteLine();
 
+
+
+
+// Задание 3. Расчёт занятий
+int totalMin = 500;
+int minutesLesson = 45;
+
+int fullLessons = totalMin / minutesLesson;
+int ostatokminut = totalMin % minutesLesson;
+
+Console.WriteLine($"{totalMin} минут = {fullLessons} полных занятий + {ostatokminut} минут");
